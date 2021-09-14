@@ -2,10 +2,12 @@ import React from 'react'
 
 const ExpenseInfo = (props) => {
     return (
-        <div>
-            
-            Info: {props.info.info} -- Date: {props.info.date}
+        <div className="info">
+            <div>
+                
+                Info: {props.info.info} -- Date: {props.info.date}
 
+            </div>
         </div>
     )
 }

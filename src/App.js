@@ -66,12 +66,16 @@ const App = () => {
     <div className="parent">
 
       <div className="list">
-        <p> <b>Expenses:</b> </p>
-        <form>
-          <input></input>
-        </form>
+        <p className='list__name'> <b>Expenses:</b> </p>
+
+        <div>
+          <form className='form__box'>
+            <button>Add</button>          <input></input>
+          </form>
+        </div>
+
         {expenseList}
-        <button>Add</button>  
+
       </div>
 
     </div>

@@ -2,10 +2,24 @@
 .parent{
     padding-left: 300px;
     padding-top: 100px;
+    
 }
 .list{
 border: solid 1px black;
-width: 200px;
+width: 325px;
+height: 500px;
 align-self: center;
 background-color: cornflowerblue;
+}
+
+.list__name{
+padding-left: 100px;
+}
+
+.form__box{
+    padding-left: 50px;
+}
+
+.info{
+    padding-left: 10px;
 }
