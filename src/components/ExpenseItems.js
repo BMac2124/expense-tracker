@@ -1,14 +1,17 @@
-// import React from 'react'
+import React from 'react'
 // This holds the Expense Items data
-import './ExpenseItems.css' 
-const ExpenseItems = () => {
+import ExpenseInfo from "./ExpenseInfo"
+
+const ExpenseItems = (props) => {
+    const infoList = props.item.when.map((dates)=><ExpenseInfo info={dates}/>)
+    
     return (
-        <div className= "expense-items">
-            <div>Date</div>
-            <div className= "expense-item__description">
-                <h2>item description</h2>
-                <div className="expense-item__price">Item Amount</div>
-            </div>
+        <div>
+            <ul>
+                <li>{props.item.id}</li>
+           <li>{props.item.title} - {props.item.amount}</li>
+            </ul>
+            {infoList}
         </div>
     )
 }
