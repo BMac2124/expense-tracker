@@ -9,7 +9,7 @@ const ExpenseItems = (props) => {
         <div>
             <ul>
                 <li>{props.item.id}</li>
-           <li>{props.item.title} - {props.item.amount}</li>
+           <li>{props.item.title} - ${props.item.amount}</li>
             </ul>
             {infoList}
         </div>
